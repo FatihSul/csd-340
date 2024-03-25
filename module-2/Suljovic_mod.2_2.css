@@ -1,0 +1,35 @@
+.html, .body{
+    font-size: 16px
+}
+
+.h1{
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.h2{
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.p{
+    line-height: 1.4em;
+}
+
+.address{
+    text-align: center;
+}
+
+a.website:hover {
+    color: #02e1ff;
+  }
+
+a.website:visited {
+    color: #071774;
+  }
+
+.intro{
+    text-indent: 2em;
+}
