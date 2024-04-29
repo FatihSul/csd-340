@@ -14,9 +14,6 @@ h1,h2,h3,h4 {
 a {
     color: #833edd;
     text-decoration: none;
-    float: right;
-    margin-top: 20px;
-    margin-right: 20px;
 }
 
 a:hover {
