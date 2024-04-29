@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Development with HTML and CSS</title>
+
+    <script>
+        var firstVar = "trembling"
+        var secondVar = "STAND BY"
+        var thirdVar = "Squatting"
+        var fourthVar = "shuttles" 
+    </script>
+
+
+</head>
+<body>
+    <div>
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+
+        <h2>Dialogue from Aliens (1986)</h2><br>
+        
+
+        <p>
+            Ripley lunges INTO FRAME with an animal outcry. She clutches her chest, breathing hard. Bathed in sweat she lights a cigarette with <span id = "trembling">_________</span> hands. Do we hear a faint, desolate wind?.
+        </p>
+        <p>
+            TIGHT ON PHONE CONSOLE as Ripley's hand inserts Burke's card into a slot. "<span id = "STAND BY">_________</span>" prints out on the screen and is replaced by Burke's face, bleary with sleep.
+        </p>
+        <p>
+            An enormous chamber, cavernous and dark. <span id = "Squatting">_________</span> in the shadows are two orbit-to-surface <span id = "shuttles">_________</span>. DROP-SHIPS.  Heavy machinery all around them... cranes, loading equipment.
+        </p>
+
+
+        <p>
+            <button type="button" onclick="document.getElementById('trembling').innerHTML = firstVar">trembling</button>
+            <button type="button" onclick="document.getElementById('STAND BY').innerHTML = secondVar">STAND BY</button>
+            <button type="button" onclick="document.getElementById('Squatting').innerHTML = thirdVar">Squatting</button>
+            <button type="button" onclick="document.getElementById('shuttles').innerHTML = fourthVar">shuttles</button>
+        </p>
+
+
+    </div>
+</body>
+</html>
