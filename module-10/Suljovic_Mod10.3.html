@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Development with HTML and CSS</title>
+
+
+</head>
+<body>
+    <div>
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    
+        <img id="CaveImg" src="./images/cave_01.jpg" onmouseover="cave('./images/cave_02.jpg')" onmouseout="cave('./images/cave_01.jpg')" alt="Image">
+
+
+        <img id="MoonImg" src="./images/moon_01.jpg" onmouseover="moon('./images/moon_02.jpg')" onmouseout="moon('./images/moon_01.jpg')" alt="Image">
+
+
+        <script>
+            function cave(newCave) {
+                document.getElementById('CaveImg').src = newCave;
+            }
+        </script>
+
+        <script>
+            function moon(newMoon) {
+                document.getElementById('MoonImg').src = newMoon;
+            }
+        </script>
+
+    </div>
+</body>
+</html>
