@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    <input type="text" id="inputText">
+    <button onclick="addToList()">Add</button>
+    <button onclick="deletePrevious()">Delete Last Entry</button>
+    <button onclick="displayList()">Display</button>
+    <div id="output"></div>
+
+
+    <script>
+        let toDoList = [];
+        let outputDiv = document.getElementById("output");
+
+        function addToList() {
+            let inputValue = document.getElementById("inputText").value;
+            toDoList.push(inputValue);
+            displayOutput("Added " + inputValue + " to the list as #" + toDoList.length);
+        }
+
+        function deletePrevious(){
+            if (toDoList.length > 0){
+                let deletePrevious = toDoList.pop();
+                displayOutput("Deleted " + deletePrevious + " from the list!");
+            } else {
+                displayOutput("Your To Do List is empty!");
+            }
+        }
+
+        function displayList(){
+            let currentList = "Current To Do List:<br>";
+            toDoList.forEach(function (item, index) {
+                currentList += (index + 1) + ". " + item + "<br>";
+            });
+            displayOutput(currentList);
+        }
+
+        function displayOutput(message) {
+            outputDiv.innerHTML = message;
+        }
+        
+    </script>
+</body>
+</html>
